@@ -1,0 +1,22 @@
+# ls
+alias ls='ls -Fh'
+alias la='ls -al'
+
+# Git
+alias g='git'
+alias gst='git status'
+alias gb='git branch'
+alias gba='git branch -a'
+
+# Docker
+alias dps="docker ps -a"
+alias di="docker images"
+alias drf="docker rm -f"
+alias ds="docker stop"
+alias dc="docker-compose"
+
+alias drc='docker ps -a --no-trunc | grep "Exit" | awk "{print \$1}" | xargs docker rm'
+alias dri='docker images -f "dangling=true" -q | xargs docker rmi'
+
+. ~/.bash/alias_completion
+. ~/.bash/local_aliases
