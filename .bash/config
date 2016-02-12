@@ -12,4 +12,4 @@ function cleanup {
 }
 trap cleanup EXIT
 
-export PS1="\n\d \t \[$(tput setaf 166)\]\u \[$(tput setaf 7)\]at \[$(tput setaf 33)\]\h\n\[$(tput setaf 2)\]\w$(__git_ps1)\n\[$(tput setaf 7)\]\$\[$(tput sgr0)\] "
+export PS1='\n\d \t \[$(tput setaf 166)\]\u \[$(tput setaf 7)\]at \[$(tput setaf 33)\]\h\n\[$(tput setaf 2)\]\w$(__git_ps1)\n\[$(tput setaf 7)\]\$\[$(tput sgr0)\] '
