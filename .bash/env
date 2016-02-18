@@ -3,10 +3,10 @@ export AWS_REGION=us-west-2
 export EDITOR='vim'
 export GOPATH=$HOME
 export GOBIN=$GOPATH/bin
-export GO15VENDOREXPERIMENT=1
 export GOMAXPROCS=2
 export VISUAL=vim
 
+# dinghy = faster docker on OSX (https://github.com/codekitchen/dinghy)
 export DOCKER_HOST=tcp://192.168.99.100:2376
 export DOCKER_CERT_PATH=~/.docker/machine/machines/dinghy
 export DOCKER_TLS_VERIFY=1
