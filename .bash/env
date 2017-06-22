@@ -1,16 +1,11 @@
 export AWS_DEFAULT_REGION=us-west-2
 export AWS_REGION=us-west-2
-export EDITOR='vim'
-export GOPATH=$HOME
-export GOBIN=$GOPATH/bin
-export GOMAXPROCS=2
+
+export EDITOR=vim
 export VISUAL=vim
 
-# dinghy = faster docker on OSX (https://github.com/codekitchen/dinghy)
-export DOCKER_HOST=tcp://192.168.99.100:2376
-export DOCKER_CERT_PATH=~/.docker/machine/machines/dinghy
-export DOCKER_TLS_VERIFY=1
-export DOCKER_MACHINE_NAME=dinghy
+export GOPATH=$HOME
+export GOBIN=/usr/local/opt/go/libexec/bin:$GOPATH/bin
 
 export HISTCONTROL="ignoreboth"
 export HISTFILESIZE=10000
@@ -19,6 +14,4 @@ export SAVEHIST=10000
 
 PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/share/man:/usr/local/share/man"
 
-export PATH="$HOME/code/ansible/bin:$PATH"
-export PATH="$GOBIN:$PATH"
-export PATH="/usr/local/opt/go/libexec/bin:$PATH"
+export PATH="$PATH:$GOBIN"
