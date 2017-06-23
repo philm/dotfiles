@@ -13,4 +13,4 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/sbin:/bin:/usr/share/man:/usr/local/share/man"
-export PATH="/usr/local/opt/go/libexec/bin:$PATH"
+export PATH="/usr/local/opt/go/libexec/bin:$GOBIN:$PATH"
